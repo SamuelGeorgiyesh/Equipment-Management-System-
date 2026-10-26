@@ -18,9 +18,9 @@ Ladder::Ladder():Equipment()
 	Weight_Limit = 0;
 }
 
-Ladder::Ladder(const Ladder& lad) : Equipment(lad)
+Ladder::Ladder(const Ladder& lad) : Equipment(lad) // this is a constrctor that inherits from the equipment class
 {
-	this->height = lad.height;
+	this->height = lad.height; 
 	this->style = lad.style;
 	this->Weight_Limit = lad.Weight_Limit;
 }
